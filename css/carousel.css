@@ -1,0 +1,531 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+ /* margin-bottom: 4rem;*/
+    font-family: 'Ubuntu', sans-serif;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 8rem;
+  z-index: 10;
+    left: 12%;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 35rem;
+  background-color: #777;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  /*height: 32rem;*/
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: .95rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+
+.carousel-caption.text-left h1 {
+    font-size: 3em;
+}
+
+.headerFix {
+   /* height: 60px;*/
+}
+
+
+.circDoc {
+    display: inline-block;
+    background: #0381c0;
+    padding: 12px;
+    border-radius: 50px;
+    width: 65px;
+    height: 65px;
+}
+
+.circDoc img{
+width: 80%;}
+
+section.g-color-white.g-py-15{
+    background: #0381c0;
+}
+
+
+section.g-color-white.g-py-15 .card-body{
+        padding: 35px 5px;
+}
+
+
+.card-title {
+        padding: 5px 0;
+    line-height: 25px;
+    font-size: 1.1em;
+    letter-spacing: .03em;
+}
+
+.card.text-center {
+    border: none;
+    background: transparent;
+}
+
+p.card-text {
+        font-size: 1.0em;
+    color: #cdddea;
+    padding: 0 10px;
+    font-family: ubuntu;
+}
+
+.row.contaimMid.m-auto>.col-md-3:not(:first-child) {
+    border-left: solid 0.5px #00a9fd;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.row.contaimMid.m-auto .col-md-3:hover {
+   background-color: #036697;
+}
+
+.row.contaimMid.m-auto {
+        width: 97% !important;
+}
+
+.g-bg-primary {
+    background-color: #00a9fd !important;
+}
+
+.btn-lg {
+    padding: .7rem 1.8rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+    font-weight: 600;
+}
+
+a.btn.btn-md {
+    background: #1a6cb4;
+    border-radius: 4px;
+    background-color: #0381c0;
+    color: aliceblue;
+    font-weight: 600;
+    padding: 8px 30px;
+}
+
+.fntHeader {
+        text-align: center;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    color: #00a9fd;
+}
+
+.midContent {
+        width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: .90em;
+    font-weight: 400;
+    font-family: ubuntu;
+    color: #6b6b6b;
+    margin-bottom: 90px;
+}
+
+a.btn.btn-primary {
+    color: #fff;
+    background-color: #00a9fd;
+    border-color: #00a9fd;
+}
+
+div.card-body>.btn.btn-primary {
+    font-size: .75em;
+    font-weight: 500;
+}
+
+.ftBottom {
+        display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: .8em;
+    font-weight: 400;
+    color: #777777;
+    font-family: ubuntu;
+    line-height: 23px;
+    border-top: solid 0.5px #00a9fd9c;
+}
+
+.ft01 {
+    flex: 2;
+        padding-left: 30px;
+        margin-top: 20px;
+}
+
+.ft02 {
+    flex: 1;
+        padding-left: 30px;
+        margin-top: 20px;
+}
+
+
+.ftTitle {
+   font-weight: 600;
+    font-size: 1.1em;
+}
+
+.ft01 span {
+    display: block;
+}
+
+.ft02 span {
+    display: block;
+}
+
+
+.footerDwn{
+       display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: .75em;
+    color: #777777;
+    
+}
+
+.footerDwn>div>img {
+    width: 80%;
+}
+
+
+.menuTop{
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+}
+
+
+/* Form sign-in CSS styling */
+
+.modal-content .card {
+	    padding: 5px !important;
+}
+
+.card>.card-body h1.h4.mb-3.text-center.card-title{
+	line-height: 50px;
+    font-size: 22px;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 420px;
+  padding: 5px;
+  margin: 0 auto;
+	    background: #f9f9f9ed;
+	 font-family: 'Ubuntu', sans-serif;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group > input,
+.form-label-group > label {
+  padding: var(--input-padding-y) var(--input-padding-x);
+}
+
+.form-label-group > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0; /* Override default `<label>` margin */
+  line-height: 1.5;
+  color: #495057;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::placeholder {
+  color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+  padding-bottom: calc(var(--input-padding-y) / 3);
+}
+
+.form-label-group input:not(:placeholder-shown) ~ label {
+  padding-top: calc(var(--input-padding-y) / 3);
+  padding-bottom: calc(var(--input-padding-y) / 3);
+  font-size: 12px;
+  color: #777;
+}
+
+.fieldCntrl{
+	    border: none;
+    background: transparent;
+    border-bottom: 1px solid #d39e00;
+    border-radius: 0;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: transparent;
+     border-color: none ;
+    /* outline: 0; */
+     box-shadow: none;
+}
+
+.form-control {
+        font-size: .83rem !important;
+    border: 1px solid #ebebeb !important;
+     font-family: 'Ubuntu', sans-serif;
+    padding: 0.7rem;
+    border-radius: 0 !important;
+	
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+button.btn.btn-lg.btn-block{
+	    color: #FFFFFF !important;
+     font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 0;
+}
+
+button{
+	    background: #006bc1;
+    border: 1px solid #006bc1;
+    /* color: #FFFFFF !important; */
+}
+
+.colorWhite{
+	color: #006bc1;
+    font-size: 13px;
+}
+
+label, .txtNormal{
+	    font-size: 13px !important;
+    color: #5f5f5f !important;
+    font-weight: 500;
+    padding: 0 10px;
+}
+
+.txtNormal span {
+	color: #006bc1;
+}
+
+.form-check.ml-4{
+	    text-align: left;
+    margin-bottom: 1em;
+    margin-left: 0 !important;
+}
+
+@media (max-width: 575px){
+	.modal-dialog {
+		min-width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	.modal-content {
+		min-width: 200px;
+	}
+		}
+		@media (max-width: 1048px){
+		.topImage img {
+			width: 150%;
+		}
+	}
+
+	.logoimg img{
+		width: 200px;
+	}
+
+
+.lgBtn {
+	color: #006bc1;
+}
+
+
+
+.modal-content {
+    /* background-color: transparent !important; */
+    max-width: 400px;
+    margin: 60px auto !important;
+}
+
+
+
+a.btn.btn-outline-primary {
+    
+        color: #00a9fd;
+    border-color: #00a9fd;
+}
+
+a.btn.btn-outline-primary:hover, a.btn.btn-outline-primary:active {
+    color: #fff !important;
+    background-color: #00a9fd;
+    border-color: #00a9fd;
+}
+
+
+@media (max-width:852px) {
+    .carousel-caption.text-left h1 {
+    font-size: 3em;
+}
+    
+    .carousel-caption {
+    bottom: 4rem;
+    z-index: 10;
+    left: 12%;
+}
+    .carousel-item > img {
+    height: 35rem;
+}
+    }
+
+@media (max-width:767px) {
+    section.g-bg-primary.py-4> div.container {
+    text-align: center;
+}
+    .row.contaimMid.m-auto>.col-md-3:not(:first-child) {
+    border-top: solid 1px #00a9fd !important; 
+         border: none;
+        padding-top: 20px;
+            }
+    .midContent {
+        width: 100%; }
+   
+}
+
+@media (max-width:523px) {
+    .carousel-caption.text-left h1 {
+    font-size: 2.5em;
+}
+    .midContent {
+    padding: 0;
+}
+    
+    .carousel-caption {
+    bottom: 1.5rem;
+    z-index: 10;
+    left: 12%;
+}
+    .carousel-item > img {
+    height: 35rem;
+}
+    }
+
+@media (max-width:434px) {
+    .carousel-caption.text-left h1 {
+    font-size: 2.0em;
+}
+    
+    .carousel-caption {
+    bottom: 5.5rem;
+    z-index: 10;
+    left: 12%;
+}
+    .btn-lg {
+    padding: .7rem 1.5rem;
+    font-size: 0.8rem;
+   
+}
+    
+    }
+
+
+.carousel-caption.text-left p:not(:first-child) {
+    display: flex;
+}
+
+
+

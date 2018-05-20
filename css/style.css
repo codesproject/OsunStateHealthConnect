@@ -1,0 +1,51 @@
+
+
+
+.ico_control {
+right: 15px;
+    color: #7d7a75;
+    font-weight: 100;
+    font-size: 1.7rem !important;
+}
+
+
+.cardControl {
+        width: 90%;
+    margin: auto;
+}
+
+.contWidth {
+   
+    max-width: 460px;
+
+}
+
+.margTop {
+    margin-top: 30px;
+}
+
+.btn {
+    background-color: #006bc1;
+}
+
+input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]) {
+    
+    border-bottom: 1px solid #006bc1;
+    box-shadow: 0 1px 0 0 #006bc1;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+    
+         color: #006bc1; 
+    font-weight: 500;
+    text-transform:none;
+    
+}
+
+span.card-title.activator.text-darken-4.center-align {
+    color: #006bc1;
+}
+
+span.card-title.text-darken-4.center-align {
+    color: #006bc1;
+}
