@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+     <title>Web Design</title>
+      <!--Import Google Icon Font-->
+      <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+      <!--Import materialize.css-->
+      
+      
+       <link href="css/icon.css" type="text/css" rel="stylesheet" />
+      
+      <link type="text/css" rel="stylesheet" href="css/Hconnect.css" />
+      
+       <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+       
+      <link type="text/css" rel="stylesheet" href="css/materialize.css" />
+     
+      <link type="text/css" rel="stylesheet" href="css/carousel.css" />
+      
+      <link href="css/style.css" type="text/css" rel="stylesheet" />
+      
+       <style>
+
+.full {                                                                                                      
+     width: 100vw;
+     max-height: 100vh;
+     height: 100vh
+ }  
+   
+     </style>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+     
+  <div id="modal1" class=" full">
+   <!-- new user form -->
+   <div class="modal-content col s12 m8">
+       <form name="planForm" ng-submit="submitPlanForm()">
+           <div class="card z-depth-2">
+               <div class="card-content">
+                   <span class="card-title black-text">Add New User</span>
+                   <div class="row margTop">
+
+                     <div class="input-field col s6">
+                       <input id="name"  name="name" type="text" class="validate" ng-model="planFormData.name" required="required" >
+                       <label for="email">Plan Name</label>
+                       <span class="helper-text" data-error="Plan Name is required" data-success="right"></span>
+                   </div>
+
+                   <div class="input-field col s6">
+                       <input id="code"  name="code" type="text" class="validate" ng-model="planFormData.code" required="required" >
+                       <label for="code">Code</label>
+                       <span class="helper-text" data-error="Code is Require" data-success=""></span>
+                   </div>
+
+                   <div class="input-field col s12">
+                       <select name="is_active" ng-model="planFormData.is_active" required>
+                           <option value="" disabled selected>- Please Choosen Status xxb -</option>
+                           <option value="1">Active</option>
+                           <option value="0">Inactive</option>                
+                       </select>
+                   </div>
+
+               </div>
+               <div class="modal-footer">
+
+                   <button type="submit" class="btn green waves-effect waves-light z-depth-2 loading" ng-disabled="planForm.$invalid">Submit</button>
+                   <a href="javascript:history.back()" class=" waves-effect waves-green btn-flat">Cancel</a>
+
+               </div>
+
+           </div>
+           </div>
+   </form>
+</div>
+
+</div>
+       
+      <!--JavaScript at end of body for optimized loading-->
+        
+       <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      
+     
+    </body>
+  </html>

@@ -2,19 +2,19 @@
 
 body{
 	margin: 0;
-	font-family: 'Exo', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 .container{
 	width: 100%;
-	font-family: 'Exo', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	padding: 0;
 }
 
 .container-fluid {
 	width: 100%;
 	margin: auto;
-	font-family: 'Exo', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	    padding: 0 !important;
 }
 
@@ -1088,9 +1088,12 @@ box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.15);
 		font-size: 1.25rem; }
 }
 
-@media (max-width: 811px) {
+@media (max-width: 852px) {
 	
-	
+	.carousel .carousel-item > img {
+    width: auto;
+        height: auto;
+}
 }
 
 @media (max-width: 620px) {
@@ -1818,11 +1821,12 @@ background: #f3f3f3;
 }
 
 .btn{
-	    padding: .375rem 3.5rem;
+	/*  padding: .375rem 3.5rem;
     border-radius: 20px;
-    font-size: .9rem;
+    font-size: .9rem;*/
     font-family: ubuntu;
     font-weight: 500;
+    line-height: 30px;
 }
 
 .btn-secondary {
@@ -2004,12 +2008,167 @@ label.custom-control-label {
 }
 
 
+/* Reslove CSS conflict with pages */
+
+.center-align.row.margTop img {
+    margin: auto;
+}
+
+.input-field.col.s12 {
+    flex-basis: auto;
+}
 
 
 
+.ico_control {
+right: 15px;
+    color: #7d7a75;
+    font-weight: 100;
+    font-size: 1.7rem !important;
+}
 
 
+.cardControl {
+        width: 90%;
+    margin: auto;
+}
+
+.contWidth {
+   
+    max-width: 460px;
+
+}
+
+.margTop {
+    margin-top: 30px;
+}
+
+.btn {
+    background-color: #006bc1;
+}
+
+input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]) {
+    
+    border-bottom: 1px solid #006bc1;
+    box-shadow: 0 1px 0 0 #006bc1;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+    
+         color: #006bc1; 
+    font-weight: 500;
+    text-transform:none;
+    
+}
+
+span.card-title.activator.text-darken-4.center-align {
+    color: #006bc1;
+}
+
+span.card-title.text-darken-4.center-align {
+        color: #006bc1;
+    font-size: 1.7em;
+    font-weight: 300;
+}
 
 
+.menuLogin a {
+    background-color: white;
+}
+
+.menuCnt a:hover {
+    text-decoration: none;
+}
+
+span.card-title.text-darken-4.center-align a:hover {
+     text-decoration: none;
+}
+
+.bgPattern {
+        background-color: #f8f8f8;
+    background-image: repeating-linear-gradient(145deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
+}
 
 
+.formWidth {
+    max-width: 600px;
+}
+
+ul.dropdown-content.select-dropdown {
+    background: #fff;
+        z-index: 10;
+}
+
+input.select-dropdown.dropdown-trigger {
+    font-size: 13px;
+    font-weight: 500;
+    color: #757575;
+}
+
+
+.input-field.col.s12>.select-wrapper {
+    left: 10px;
+}
+
+button.btn.waves-effect.waves-light {
+    padding: 5px 30px;
+}
+
+@media (max-width:600px) {
+    
+    .menuTop {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+}
+
+/* Slider images */
+
+.slider-img01 {
+        background-image: url(../img/img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+   
+}
+
+.slider-img01:before {
+    content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  background: #00000047;
+}
+
+.slider-img02 {
+        background-image: url(../img/img3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+   
+}
+
+.slider-img03 {
+        background-image: url(../img/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+   
+}
+
+@media (max-width:568px) {
+    .slider-img01,  .slider-img02,  .slider-img03  {
+        background-position: right;
+           }
+    
+    .slider-img01:before, .slider-img02:before, .slider-img03:before {
+        content: "";
+      position: absolute;
+      left: 0; right: 0;
+      top: 0; bottom: 0;
+     background: #00000060;
+        
+        }
+}
+
+/* end Slider images */

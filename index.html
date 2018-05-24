@@ -7,22 +7,27 @@
     <meta name="author" content="">
 
     <title>Landing page</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
+    
+    <link href="css/materialize.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/carousel.css" rel="stylesheet">
+      <link href="css/Hconnect.css" rel="stylesheet"> 
+      
+      <link href="css/style.css" type="text/css" rel="stylesheet" />
+      <link href="css/icon.css" type="text/css" rel="stylesheet" />
     
-     <!-- <link href="css/Hconnect.css" rel="stylesheet"> -->
-    
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
   </head>
   <body>
 
     <header>
     <div class="container-fluid headerFix ">
-     <div class="container d-flex flex-column flex-md-row align-items-center p-2 px-md-4 bg-white">
+     <div class="container d-flex flex-column flex-md-row align-items-center  px-md-4 bg-white">
       <h5 class="my-0 mr-md-auto font-weight-normal">
       <img src="img/logo/logo-1.jpg" /></h5>
       <div class="menuTop">
@@ -50,7 +55,7 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="first-slide" src="img/img2.jpg" alt="First slide">
+            <div class="first-slide slider-img01">
             <div class="container">
               <div class="carousel-caption text-left">
                 <h1>2018 Enrollment is open. <br />
@@ -63,8 +68,9 @@
               </div>
             </div>
           </div>
+            </div>
           <div class="carousel-item">
-            <img class="second-slide" src="img/img3.jpg" alt="Second slide">
+            <div class="second-slide slider-img02">
            <div class="container">
               <div class="carousel-caption text-left">
                 <h1>2018 Enrollment is open. <br />
@@ -77,8 +83,9 @@
               </div>
             </div>
           </div>
+            </div>
           <div class="carousel-item">
-            <img class="third-slide" src="img/img1.jpg" alt="Third slide">
+            <div class="third-slide slider-img03">
            <div class="container">
               <div class="carousel-caption text-left">
                 <h1>2018 Enrollment is open. <br />
@@ -91,6 +98,7 @@
               </div>
             </div>
           </div>
+            </div>
         </div>
         <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -106,7 +114,7 @@
       
       <div class="g-mb-10 text-white">
       
-<section class="g-bg-primary py-4">
+<section class="g-bg-primary py-4" id="accSection">
   <div class="container">
     <div class="row">
       <div class="col-md-9 align-self-center">
@@ -116,7 +124,7 @@
       </div>
 
       <div class="col-md-3 align-self-center text-md-right">
-        <a href="login.html" class="btn btn-md">LOGIN</a>
+        <a href="#category" id="smtScroll" class="btn btn-md">GET STARTED</a>
       </div>
     </div>
   </div>
@@ -124,16 +132,16 @@
            
  <section class="g-color-white g-py-15">
        
-       <div class="row contaimMid m-auto">
+       <div class="row contaimMid m-auto" id="category">
        <div class="col-md-3">
         <div class="card text-center">
           
       <div class="card-body">
       <img src="img/ico-01.png">
-    <h5 class="card-title">ORGANISATIONS</h5>
+    <h5 class="card-title">COMAPANIES</h5>
     <p class="card-text">Looking for coverage 
 for your organisation?</p>
-    <a href="#" class="btn btn-primary">GET STARTED</a>
+    <a href="step1.html" class="btn btn-primary">GET STARTED</a>
       </div>
   
 </div>
@@ -144,10 +152,10 @@ for your organisation?</p>
           
       <div class="card-body">
        <img src="img/ico-02.png">
-    <h5 class="card-title">HEALTHCARE PROVIDERS</h5>
+    <h5 class="card-title">HOSPITALS</h5>
     <p class="card-text">Looking for coverage 
 for your organisation?</p>
-    <a href="#" class="btn btn-primary">GET STARTED</a>
+    <a href="step1.html" class="btn btn-primary">GET STARTED</a>
       </div>
   
 </div>
@@ -158,12 +166,11 @@ for your organisation?</p>
           
       <div class="card-body">
        <img src="img/ico-01.png">
-    <h5 class="card-title">HEALTH MAINTENANCE 
-ORGANISATIONS (HMOs)</h5>
+    <h5 class="card-title"> HMOs</h5>
         <p class="card-text">
             Looking for coverage 
                 for your organisation?</p>
-    <a href="#" class="btn btn-primary">GET STARTED</a>
+    <a href="step1.html" class="btn btn-primary">GET STARTED</a>
       </div>
   
 </div>
@@ -205,7 +212,9 @@ ORGANISATIONS (HMOs)</h5>
                 </div>
     
       </div>
-      
+
+        
+
       
       <div class="ftBottom mt-5 pt-5">
          <div class="ft01">
@@ -282,7 +291,41 @@ ORGANISATIONS (HMOs)</h5>
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.min.js"></script>
  <script src="js/popper.min.js"></script>
+ 
+ 
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
 
-<script src="js/bootstrap.min.js"></script>
+ <script>
+$(document).ready(function(){
+  // Add smooth scrolling to smtScroll only
+  $("#smtScroll").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 700, function(){
+   
+        
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+     
+      $('.dropdown-trigger').dropdown();
+   
+</script>
+ 
+
+  
   </body>
 </html>

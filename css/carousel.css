@@ -25,7 +25,7 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 35rem;
+  height: 37rem;
   background-color: #777;
 }
 .carousel-item > img {
@@ -133,6 +133,7 @@ section.g-color-white.g-py-15 .card-body{
 .card.text-center {
     border: none;
     background: transparent;
+        box-shadow: none;
 }
 
 p.card-text {
@@ -265,7 +266,7 @@ div.card-body>.btn.btn-primary {
 .menuTop{
     display: flex;
     align-items: center;
-    margin-top: 14px;
+  /*margin-top: 14px;*/
 }
 
 
@@ -438,7 +439,7 @@ label, .txtNormal{
 
 .modal-content {
     /* background-color: transparent !important; */
-    max-width: 400px;
+    max-width: 550px;
     margin: 60px auto !important;
 }
 
