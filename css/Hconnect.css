@@ -2184,3 +2184,11 @@ ul#dropdown2 li:hover, ul#dropdown2 li.active, ul#dropdown2 a:hover{
     background-color: #eee;
         color: #6b767b;
 }
+
+
+
+div#dropdownName {
+    background: #fdfdfd;
+    font-size: 14px;
+    font-weight: 500 !important;
+}
