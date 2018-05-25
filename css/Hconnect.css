@@ -923,6 +923,7 @@ background-color: #f3f3f3;
 	display: flex;
     justify-content: space-between;
 	margin-top: 30px;
+        flex-wrap: wrap;
 }
 
 .dashHolderBox>div {
