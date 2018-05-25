@@ -744,7 +744,7 @@ label, .txtNormal{
 
 .dshBrdRight{
 	background: #00a9fd;
-	   padding: 10.5px 5px;
+	   padding: 9px 5px 4px;
 	  text-align: center;
 }
 
@@ -792,7 +792,8 @@ label, .txtNormal{
         border: 1px solid #349cd1;
     padding: 3px 10px;
     border-radius: 25px;
-    width: 25%;
+    width: 20%;
+    height: 1.5em;
     background-color: #0381c0;
     background-image: url(../img/search.png);
     background-repeat: no-repeat;
@@ -2172,3 +2173,14 @@ button.btn.waves-effect.waves-light {
 }
 
 /* end Slider images */
+
+
+ul#dropdown2 {
+    background: white;
+    width: auto !important;
+}
+
+ul#dropdown2 li:hover, ul#dropdown2 li.active, ul#dropdown2 a:hover{
+    background-color: #eee;
+        color: #6b767b;
+}
