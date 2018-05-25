@@ -1211,8 +1211,11 @@ padding-right: 5px;}
 	padding: 6px 15px !important;
     color: #1fba21 !important;
     font-weight: 500 !important;
-    font-size: .9em !important;
+    font-size: .85em !important;
     border-radius: 5px !important;
+    line-height: 20px !important;
+    height: auto !important;
+    float: none !important;
 }
 
 
